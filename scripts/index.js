@@ -11,6 +11,7 @@ blockBtnAdd.addEventListener('click', () => {
     blockContainer.append(block)  
 })
 blockBtnDel.addEventListener('click', () => {
-    const block = document.querySelector(':block')
-    block.remove();
+    const cols = document.querySelectorAll('.block');
+    const last = cols[cols.length- 1];
+    last.remove()
 })
